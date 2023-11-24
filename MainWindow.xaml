@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AnalogClock"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="AnalogClock" Height="400" Width="400">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Ellipse Width="200" Height="200" Stroke="Black" StrokeThickness="2" Fill="LightBlue"/>
+        <Line X1="100" Y1="100" X2="100" Y2="30" Stroke="Black" StrokeThickness="2" Name="hour"/>
+        <Line X1="100" Y1="100" X2="100" Y2="15" Stroke="Black" StrokeThickness="2" Name ="minute"/>
+        <Line X1="100" Y1="100" X2="100" Y2="10" Stroke="Red" StrokeThickness="2" Name="second"/>
+        <TextBlock Text="12" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="95, 5"/>
+        <TextBlock Text="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="5, 95"/>
+        <TextBlock Text="6" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="95, 5"/>
+        <TextBlock Text="9" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5, 95"/>
     </Grid>
 </Window>
